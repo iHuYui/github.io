@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Begins</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20%;
+            font-size: 3em;
+            color: #2e8b57;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .start-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .start-button:hover {
+            background-color: #3cb371;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adventure Begins</h1>
+    <p>あなたの冒険が今、始まります。さあ、どんな運命が待ち受けているのでしょうか？</p>
+    <button class="start-button" onclick="startAdventure()">Start Your Adventure</button>
+
+    <script>
+        function startAdventure() {
+            window.location.href = 'decision1.html';
+        }
+    </script>
+</body>
+</html>
