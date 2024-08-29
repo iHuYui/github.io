@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enchanted Forest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0fff4;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20%;
+            font-size: 2.5em;
+            color: #006400;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .choice-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+        .choice-button:hover {
+            background-color: #228b22;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Enchanted Forest</h1>
+    <p>森の中で何をしますか？</p>
+    <button class="choice-button" onclick="goToTree()">光る木に近づく</button>
+    <button class="choice-button" onclick="goToBird()">歌う鳥を追う</button>
+
+    <script>
+        function goToTree() {
+            window.location.href = 'tree.html';
+        }
+
+        function goToBird() {
+            window.location.href = 'bird.html';
+        }
+    </script>
+</body>
+</html>
