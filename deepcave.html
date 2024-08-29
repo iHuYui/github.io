@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Deep Cave</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #dcdcdc;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20%;
+            font-size: 2.5em;
+            color: #2f4f4f;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .choice-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #2f4f4f;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+        .choice-button:hover {
+            background-color: #556b2f;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Deep Cave</h1>
+    <p>洞窟の奥へ奥へと進んでいくと、光が全く見えなくなります。突然、足元が崩れて…</p>
+    <button class="choice-button" onclick="fall()">崖から落ちる</button>
+    <button class="choice-button" onclick="holdOn()">崖につかまる</button>
+
+    <script>
+        function fall() {
+            window.location.href = 'scary_ending.html';
+        }
+
+        function holdOn() {
+            window.location.href = 'happy_ending.html';
+        }
+    </script>
+</body>
+</html>
