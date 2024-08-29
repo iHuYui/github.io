@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Singing Bird</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e0fff4;
+            color: #333;
+        }
+        h1 {
+            margin-top: 20%;
+            font-size: 2.5em;
+            color: #006400;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        .choice-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #006400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+        }
+        .choice-button:hover {
+            background-color: #228b22;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Singing Bird</h1>
+    <p>鳥を追いかけていると、突然、道が見えなくなります。鳥はどこへ行ったのでしょうか…？</p>
+    <button class="choice-button" onclick="keepSearching()">探し続ける</button>
+    <button class="choice-button" onclick="giveUp()">諦めて戻る</button>
+
+    <script>
+        function keepSearching() {
+            window.location.href = 'mystery_ending.html';
+        }
+
+        function giveUp() {
+            window.location.href = 'scary_ending.html';
+        }
+    </script>
+</body>
+</html>
